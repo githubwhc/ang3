@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+   
+}
+html,body{
+    width:100%;
+    height:100%;
+    font-family:"微软雅黑";
+    font-size:.32rem;
+}
+html,body,.wrap{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    font-size:.32rem;
+    .header{
+        width:100%;
+        background:#393a3f;
+        height:1rem;
+        
+        display: flex;
+        color:#fff;
+        flex-direction:row;
+        align-items:center;
+        .head-center{
+            flex:1;
+            padding:0rem .2rem;
+            font-size:.42rem;
+        }
+        
+        i{
+            width:1.04rem;
+            
+            text-align:center;
+            height:.6rem;
+            line-height:.6rem;
+        }
+        .left{
+            border-right:1px solid #2e2f34;
+            
+        }
+        .right{
+            transform: rotate(90deg);
+        }
+    }
+    .section{
+        flex:1;
+        position:relative;
+        background:#818d9b;
+        .toast{
+            width:6.95rem;
+            height:8.86rem;
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            margin:auto;
+            background:#fff;
+            border-radius:.2rem;
+        }
+        .title{
+            height:1.75rem;
+            width:100%;
+            margin-top:.48rem;
+            margin-bottom:.62rem;
+            h3{
+                width:100%;
+                text-align:center;
+                img{
+                   width:2.77rem;
+                   height:1rem;
+                }
+            }
+            p{
+                margin-top:.15rem;
+                color:#96999e;
+                text-align:center;
+            }
+        }
+        .input-group{
+            
+            .input-item{
+                width:80%;
+                margin:0 auto;
+                height:1rem;
+                display:flex;
+                line-height:.1rem;
+                flex-direction:row;
+                border-bottom:1px solid #9a9f9d;
+                margin-bottom:.56rem;
+                img{
+                    width:.32rem;
+                    height:.46rem;
+                    vertical-align:middle;
+                    display:block;
+                    margin-top:.18rem;
+                    margin-left:.32rem;
+                    margin-right:.2rem;
+                }
+                input{
+                    height:1rem;
+                    flex:1;
+                    outline:none;
+                    border:none;
+                    background:none;
+                    
+                }
+            }
+            
+        }
+        .sub{
+            margin-top:.32rem;
+            width:100%;
+            height:.8rem;
+            text-align:center;
+            span{
+                background:#2fba77;
+                width:80%;
+            
+                height:100%;
+                margin:0 auto;
+                line-height:.8rem;
+                color:#fff;
+                text-align:center;
+                border-radius:.2rem;
+                display:inline-block;
+            }
+        }
+    }
+}
