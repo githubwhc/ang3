@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html,
 body {
@@ -28,10 +29,12 @@ html .section,
 body .section,
 .wrap .section {
   flex: 1;
+  background: #f3f3fe;
 }
 html .section .act,
 body .section .act,
 .wrap .section .act {
+  background: #fff;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -62,6 +65,93 @@ body .section .act li .active,
 .wrap .section .act li .active {
   border-bottom: 1px solid #4e6ff5;
   color: #7991f7;
+}
+html .section .con,
+body .section .con,
+.wrap .section .con {
+  margin-top: .15rem;
+  background: #fff;
+  padding: 0rem .4rem;
+}
+html .section .con .text,
+body .section .con .text,
+.wrap .section .con .text {
+  margin-top: .23rem;
+  height: 2.25rem;
+  border-radius: .2rem;
+  border: 1px solid #ededed;
+  border-bottom: none;
+  border-bottom: 1px solid #eaeaea;
+}
+html .section .con .text .title,
+body .section .con .text .title,
+.wrap .section .con .text .title {
+  height: 1.3rem;
+  line-height: 1.3rem;
+  background: #fd6060;
+  width: 100%;
+  color: #fff;
+  font-size: .95rem;
+  padding: .18rem .37rem;
+  position: relative;
+}
+html .section .con .text .title img,
+body .section .con .text .title img,
+.wrap .section .con .text .title img {
+  vertical-align: top;
+  width: .5rem;
+  height: auto;
+}
+html .section .con .text .title span,
+body .section .con .text .title span,
+.wrap .section .con .text .title span {
+  color: #ffe4e4;
+  font-size: .54rem;
+  height: .54rem;
+  display: inline-block;
+  position: absolute;
+  bottom: .4rem;
+  right: .37rem;
+}
+html .section .con .text .text-bottom,
+body .section .con .text .text-bottom,
+.wrap .section .con .text .text-bottom {
+  height: .95rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: .1rem .5rem;
+  font-size: .22rem;
+}
+html .section .con .text .text-bottom .text-left,
+body .section .con .text .text-bottom .text-left,
+.wrap .section .con .text .text-bottom .text-left {
+  width: .44rem;
+  height: 100%;
+  line-height: .95rem;
+}
+html .section .con .text .text-bottom .text-left img,
+body .section .con .text .text-bottom .text-left img,
+.wrap .section .con .text .text-bottom .text-left img {
+  margin-top: .2rem;
+  width: .32rem;
+  height: .52rem;
+}
+html .section .con .text .text-bottom .text-right,
+body .section .con .text .text-bottom .text-right,
+.wrap .section .con .text .text-bottom .text-right {
+  flex: 1;
+}
+html .section .con .text .text-bottom .text-right p,
+body .section .con .text .text-bottom .text-right p,
+.wrap .section .con .text .text-bottom .text-right p {
+  margin: .12rem;
+  color: #b8b8b8;
+}
+html .section .con .text .text-bottom .text-right .active,
+body .section .con .text .text-bottom .text-right .active,
+.wrap .section .con .text .text-bottom .text-right .active {
+  color: #57c698;
 }
 html .footer,
 body .footer,

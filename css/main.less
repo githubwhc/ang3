@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-   
+    box-sizing:border-box;
 }
 html,body{
     width:100%;
@@ -21,7 +21,9 @@ html,body,.wrap{
     }
     .section{
         flex:1;
+         background:#f3f3fe;
         .act{
+            background:#fff;
             margin:0;
             padding:0;
             width:100%;
@@ -45,6 +47,76 @@ html,body,.wrap{
                 .active{
                      border-bottom:1px solid #4e6ff5;
                     color:#7991f7;
+                }
+            }
+        }
+        .con{
+            margin-top:.15rem;
+           background:#fff;
+           padding:0rem .4rem;
+            .text{
+                margin-top:.23rem;
+                height:2.25rem;
+                border-radius:.2rem;
+                border:1px solid #ededed;
+                border-bottom:none;
+                border-bottom:1px solid #eaeaea;
+                .title{
+                    height:1.3rem;
+                    line-height:1.3rem;
+                    background:#fd6060;
+                    width:100%;
+                    color:#fff;
+                    font-size:.95rem;
+                    padding:.18rem .37rem;
+                    position:relative;
+                   img{
+                    
+                       vertical-align:top;
+                       width:.5rem;
+                       height:auto;
+                       
+                       
+                   }
+                   span{
+                       color:#ffe4e4;
+                       font-size:.54rem;
+                       height:.54rem;
+                       display:inline-block;
+                   
+                       position:absolute;
+                       bottom:.4rem;
+                       right:.37rem;
+                   }
+                }
+                .text-bottom{
+                    height:.95rem;
+                    width:100%;
+                    display:flex;
+                    flex-direction:row;
+                    padding:.1rem .5rem;
+                    font-size:.22rem;
+                    
+                    .text-left{
+                       width:.44rem;
+                       height:100%;
+                       line-height:.95rem; 
+                       img{
+                           margin-top:.2rem;
+                           width:.32rem;
+                           height:.52rem;
+                       }
+                    }
+                    .text-right{
+                       flex:1;
+                       p{
+                           margin:.12rem;
+                           color:#b8b8b8;
+                       } 
+                       .active{
+                           color:#57c698;
+                       }
+                    }
                 }
             }
         }
